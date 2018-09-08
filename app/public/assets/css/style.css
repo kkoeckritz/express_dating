@@ -39,7 +39,7 @@ body {
 
 body {
 	background-color: white;
-	background-image: url("../images/bg7.png");
+	background-image: url("../images/bg8_small.png");
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
@@ -86,7 +86,7 @@ body {
 
 .bg_scenic {
 	background-image: url(../images/ocean_crop.jpg);
-	background-position: 0 -70px;
+	background-position: 0 -70px; 
 }
 
 .heading_title {
