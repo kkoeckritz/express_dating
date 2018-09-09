@@ -4,7 +4,7 @@ var readChunk = require("read-chunk");
 var fileType = require("file-type");
 var parser = require("body-parser");
 
-// initialize server
+// configure, initialize server
 var express = require("express");
 var app = express();
 var PORT = process.env.PORT || 8080;
@@ -13,8 +13,8 @@ app.use(parser.urlencoded({extended: true}));
 app.use(parser.json());
 
 // link server routing data
-require("./app/routes/apiRoutes")(app, parser);
 require("./app/routes/htmlRoutes")(app, path);
+require("./app/routes/apiRoutes")(app);
 
 // start server
 app.listen(PORT, function() {
