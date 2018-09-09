@@ -12,7 +12,8 @@ app.use(express.static(path.join(__dirname, "app/public")));
 app.use(parser.urlencoded({extended: true}));
 app.use(parser.json());
 
-require("./app/routes/apiRoutes")(app);
+// link server routing data
+require("./app/routes/apiRoutes")(app, parser);
 require("./app/routes/htmlRoutes")(app, path);
 
 // start server
