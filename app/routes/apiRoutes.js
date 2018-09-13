@@ -15,7 +15,6 @@ module.exports = function(app) {
     // grab friend data via GET
     app.get("/api/friends", function(req, res) {
         res.json(friends);
-        console.log(friends);
     });
 
     // compare survey answers with others via POST
