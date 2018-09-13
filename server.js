@@ -3,12 +3,12 @@ var path = require("path");
 var readChunk = require("read-chunk");
 var fileType = require("file-type");
 var parser = require("body-parser");
+var express = require("express");
 
 // configure, initialize server
-var express = require("express");
 var app = express();
 var PORT = process.env.PORT || 8080;
-app.use(express.static(path.join(__dirname, "app/public")));
+app.use(express.static(path.join(__dirname + "/app/public")));
 app.use(parser.urlencoded({extended: true}));
 app.use(parser.json());
 

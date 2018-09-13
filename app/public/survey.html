@@ -38,13 +38,13 @@
 	<main class="container">
 		
 		<!-- survey content -->
-		<div id="card_projects" class="card scrollspy">
+		<div id="card_projects" class="card">
 			<div class="card-content blue darken-1">
 				<!-- <img class="circle left heading_img" src="./assets/images/code.png"> -->
 				<h2 class="center heading_title">Find Your Match</h2>
 			</div>
 			<div class="card-content">
-				<form action="/api/friends" method="post">
+				<form action="/api/match" method="POST">
 					
 					<div class="row">
 						<div class="col m12">
@@ -56,12 +56,12 @@
 									<div class="row">
 										<div class="input-field col s12 m6">
 											<i class="white-text material-icons prefix">accessibility</i>
-											<input id="a_name" type="text" class="validate white-text">
+											<input type="text" id="a_name" name="a_name" class="validate white-text">
 											<label class="white-text" for="a_name">Name</label>
 										</div>
 										<div class="input-field col s12 m6">
 											<i class="white-text material-icons prefix">photo</i>
-											<input id="a_pic" type="tel" class="validate white-text">
+											<input type="text" id="a_pic" name="a_pic" class="validate white-text">
 											<label class="white-text" for="a_pic">Image URL</label>
 										</div>
 									</div>
@@ -78,7 +78,7 @@
 								</div>
 								<div class="card-action">
 									<p class="range-field">
-										<input type="range" id="a1" min="0" max="5"/>
+										<input type="range" id="a1" name="a1" min="0" max="5"/>
 									</p>
 								</div>
 							</div>
@@ -93,7 +93,7 @@
 								</div>
 								<div class="card-action">
 									<p class="range-field">
-										<input type="range" id="a2" min="0" max="5"/>
+										<input type="range" id="a2" name="a2" min="0" max="5"/>
 									</p>
 								</div>
 							</div>
@@ -108,7 +108,7 @@
 								</div>
 								<div class="card-action">
 									<p class="range-field">
-										<input type="range" id="a3" min="0" max="5"/>
+										<input type="range" id="a3" name="a3" min="0" max="5"/>
 									</p>
 								</div>
 							</div>
@@ -123,7 +123,7 @@
 								</div>
 								<div class="card-action">
 									<p class="range-field">
-										<input type="range" id="a4" min="0" max="5"/>
+										<input type="range" id="a4" name="a4" min="0" max="5"/>
 									</p>
 								</div>
 							</div>
@@ -138,7 +138,7 @@
 								</div>
 								<div class="card-action">
 									<p class="range-field">
-										<input type="range" id="a5" min="0" max="5"/>
+										<input type="range" id="a5" name="a5" min="0" max="5"/>
 									</p>
 								</div>
 							</div>
@@ -153,7 +153,7 @@
 								</div>
 								<div class="card-action">
 									<p class="range-field">
-										<input type="range" id="a6" min="0" max="5"/>
+										<input type="range" id="a6" name="a6" min="0" max="5"/>
 									</p>
 								</div>
 							</div>
@@ -168,7 +168,7 @@
 								</div>
 								<div class="card-action">
 									<p class="range-field">
-										<input type="range" id="a7" min="0" max="5"/>
+										<input type="range" id="a7" name="a7" min="0" max="5"/>
 									</p>
 								</div>
 							</div>
@@ -183,7 +183,7 @@
 								</div>
 								<div class="card-action">
 									<p class="range-field">
-										<input type="range" id="a8" min="0" max="5"/>
+										<input type="range" id="a8" name="a8" min="0" max="5"/>
 									</p>
 								</div>
 							</div>
@@ -198,7 +198,7 @@
 								</div>
 								<div class="card-action">
 									<p class="range-field">
-										<input type="range" id="a9" min="0" max="5"/>
+										<input type="range" id="a9" name="a9" min="0" max="5"/>
 									</p>
 								</div>
 							</div>
@@ -213,7 +213,7 @@
 								</div>
 								<div class="card-action">
 									<p class="range-field">
-										<input type="range" id="a10" min="0" max="5"/>
+										<input type="range" id="a10" name="a10" min="0" max="5"/>
 									</p>
 								</div>
 							</div>
