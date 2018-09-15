@@ -1,3 +1,6 @@
+// link required libs
+var fs = require("fs");
+
 // link user data
 var friends = require("../data/friends");
 
@@ -46,7 +49,7 @@ module.exports = function(app) {
         }
 
         // 
-        var temp_friend = new Friend(null, null, []);
+        var temp_friend = new Friend("No match found.", null, []);
         var diff = 2000;
 
         // create matching score for each friend
@@ -63,7 +66,14 @@ module.exports = function(app) {
             }
         }
 
+        // save user data to friends.js
+        // DOESN'T WORK: fs.appendFile("../data.friends.js", JSON.stringify(user), "utf-8");
+
         // present user with closest-matched friend
-        console.log(temp_friend.name);
+        console.log(`User matched with ${temp_friend.name}`);
+        res.json({
+            name: temp_friend.name,
+            photo: temp_friend.photo
+        });
     });
 };
